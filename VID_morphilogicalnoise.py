@@ -16,7 +16,7 @@ while True:
 
     kernel = np.ones((5,5), np.uint8)
 
-    # Apply histogram equalization
+
     opening = cv2.morphologyEx(frame1, cv2.MORPH_OPEN, kernel)
     closing = cv2.morphologyEx(frame1, cv2.MORPH_CLOSE, kernel)
 
