@@ -16,7 +16,7 @@ while True:
     gray_vid = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
     _, thresh_vid = cv2.threshold(gray_vid, 127, 255, cv2.THRESH_BINARY)
 
-    # Display original, hsv 
+    # Display  
     cv2.imshow('Original Video', frame1)
     cv2.imshow('Gray Video', gray_vid)
     cv2.imshow('White_black Video', thresh_vid)
